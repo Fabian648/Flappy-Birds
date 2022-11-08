@@ -15,6 +15,9 @@ public class PlayerControl : MonoBehaviour
 
     public GameObject lose_button;
 
+    //Animation
+    public Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -44,6 +47,7 @@ public class PlayerControl : MonoBehaviour
 
         if(collider.gameObject.tag == "Pipe" || collider.gameObject.tag == "Ground")
         {
+            animator.SetBool("hit", true);
             lose_button.SetActive(true);
         }
     }

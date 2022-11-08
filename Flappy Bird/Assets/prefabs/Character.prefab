@@ -86,6 +86,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   force: 200
+  score: 0
+  score_text: {fileID: 0}
+  lose_button: {fileID: 0}
 --- !u!1 &2230226652012562500
 GameObject:
   m_ObjectHideFlags: 0
