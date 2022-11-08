@@ -42,7 +42,7 @@ public class PlayerControl : MonoBehaviour
             score_text.text = score.ToString();
         }
 
-        if(collider.gameObject.tag == "Pipe")
+        if(collider.gameObject.tag == "Pipe" || collider.gameObject.tag == "Ground")
         {
             lose_button.SetActive(true);
         }
